@@ -14,17 +14,17 @@
 }
 
 .sparkle1 {
-  animation: sparkle1 1.5s infinite;
+  animation: sparkle1 4s infinite;
   fill: lightblue;
 }
 
 .sparkle2 {
-  animation: sparkle2 1.5s infinite;
+  animation: sparkle2 4s infinite;
   fill: tomato;
 }
 
 .sparkle3 {
-  animation: sparkle3 1.5s infinite;
+  animation: sparkle3 4s infinite;
   fill: lightgreen;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .wand {
-  animation: 3s wand infinite;
+  animation: 4s wand infinite;
 }
 
 .sparkle,
