@@ -13,14 +13,6 @@
   }
 }
 
-.sparkle {
-  --size: 100px;
-  animation-play-state: paused;
-  position: absolute;
-  height: var(--size);
-  width: var(--size);
-}
-
 .sparkle1 {
   animation: sparkle1 1.5s infinite;
   fill: lightblue;
@@ -34,6 +26,11 @@
 .sparkle3 {
   animation: sparkle3 1.5s infinite;
   fill: lightgreen;
+}
+
+.sparkle {
+  height: var(--size);
+  width: var(--size);
 }
 
 .wand {
