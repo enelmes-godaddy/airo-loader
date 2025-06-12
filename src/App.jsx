@@ -10,7 +10,7 @@ const Sparkle2 = Sparkle;
 const Sparkle3 = Sparkle;
 
 function App() {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   return (
     <>
@@ -19,10 +19,14 @@ function App() {
           "airo-loading-animation--playing": isPlaying,
         })}
       >
-        <Sparkle1 className="sparkle sparkle1" />
-        <Sparkle2 className="sparkle sparkle2" />
-        <Sparkle3 className="sparkle sparkle3" />
-        <Wand className="wand" />
+        <div className="content">
+          <div className="sparkles">
+            <Sparkle1 className="sparkle sparkle1" />
+            <Sparkle2 className="sparkle sparkle2" />
+            <Sparkle3 className="sparkle sparkle3" />
+          </div>
+          <Wand className="wand" />
+        </div>
       </div>
       <button onClick={() => setIsPlaying(!isPlaying)}>
         {isPlaying ? "Stop" : "Play"}
