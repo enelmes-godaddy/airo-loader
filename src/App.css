@@ -30,17 +30,17 @@
 }
 
 .sparkle1 {
-  animation: sparkle1 4.41s infinite;
+  animation: sparkle1 4.41s ease-out infinite;
   /* fill: lightblue; */
 }
 
 .sparkle2 {
-  animation: sparkle2 4.41s infinite;
+  animation: sparkle2 4.41s ease-out infinite;
   /* fill: tomato; */
 }
 
 .sparkle3 {
-  animation: sparkle3 4.41s infinite;
+  animation: sparkle3 4.41s ease-out infinite;
   /* fill: lightgreen; */
 }
 
@@ -51,7 +51,7 @@
 }
 
 .wand {
-  animation: 4.41s wand infinite;
+  animation: 4.41s wand ease-out infinite;
   /* fill: palegoldenrod; */
 }
 
@@ -173,6 +173,11 @@
     left: 39%;
     transform: scale(0.51)
   }
+  72.5% {
+    top: 31%;
+    left: 39%;
+    transform: scale(1.25);
+  }
   100% {
     top: 31%;
     left: 39%;
@@ -205,7 +210,7 @@
   55.5% {
     top: 10%;
     left: 51%;
-    transform: scale(0.1);
+    transform: scale(0.2);
     opacity: 1;
   }
   55.6% {
