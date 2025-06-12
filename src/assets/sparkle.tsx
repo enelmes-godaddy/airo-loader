@@ -3,8 +3,8 @@ import React from "react";
 
 const Sparkle = ({
   className,
-  // fill = "#744BC4",
-  fill,
+  fill = "#744BC4",
+  // fill,
   size = 64,
   ...rest
 }: {
