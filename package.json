@@ -1,7 +1,7 @@
 {
   "name": "airo-loader",
   "homepage": "https://enelmes-godaddy.github.io/airo-loader",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
