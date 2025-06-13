@@ -16,6 +16,7 @@ function App() {
             id="loader-size"
             type="number"
             value={size}
+            min="80"
             onChange={(e) => setSize(Number(e.target.value))}
           />
         </div>
