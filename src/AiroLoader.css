@@ -3,7 +3,7 @@
   --sparkles-size: calc(var(--airo-loader-size) * 0.5);
 }
 
-.content {
+.airo-loader {
   position: relative;
   display: flex;
   align-items: center;
