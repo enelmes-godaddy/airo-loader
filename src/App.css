@@ -3,10 +3,6 @@
   --sparkles-size: calc(var(--airo-loader-size) * 0.5);
 }
 
-.airo-loader {
-  /* background: whitesmoke; */
-}
-
 .content {
   position: relative;
   display: flex;
@@ -18,7 +14,6 @@
 
 .sparkles {
   position: relative;
-  /* border: 1px lightslategray solid; */
   height: var(--sparkles-size);
   width: var(--sparkles-size);
   /* background: url('./assets/ref-wand.svg') no-repeat center center; */
