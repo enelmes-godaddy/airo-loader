@@ -29,17 +29,14 @@ function AiroLoader({ className, size = 400 }) {
       >
         <Sparkle1
           className="sparkle sparkle1"
-          // fill="lightblue"
           size={sparkleSize}
         />
         <Sparkle2
           className="sparkle sparkle2"
-          // fill="tomato"
           size={sparkleSize}
         />
         <Sparkle3
           className="sparkle sparkle3"
-          // fill="lightgreen"
           size={sparkleSize}
         />
       </div>
