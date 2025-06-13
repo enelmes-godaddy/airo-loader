@@ -44,12 +44,6 @@
   /* fill: lightgreen; */
 }
 
-.sparkle {
-  --size: 100px;
-  height: var(--size);
-  width: var(--size);
-}
-
 .wand {
   animation: 4.41s wand cubic-bezier(0.8, 0, 0, 1) infinite;
   /* fill: palegoldenrod; */
