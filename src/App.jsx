@@ -8,7 +8,10 @@ function App() {
 
   return (
     <>
-      <AiroLoader className={isPlaying ? "airo-loader--playing" : ""} />
+      <AiroLoader
+        className={isPlaying ? "airo-loader--playing" : ""}
+        size={400}
+      />
       <button onClick={() => setIsPlaying(!isPlaying)}>
         {isPlaying ? "Stop" : "Play"}
       </button>
