@@ -1,0 +1,16 @@
+body {
+  background: whitesmoke;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  width: 100%;
+  padding: 40px;
+}

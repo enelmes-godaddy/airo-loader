@@ -3,7 +3,6 @@ import React from "react";
 const Wand = ({
   className,
   fill = "#744BC4",
-  // fill,
   size = 160,
   ...rest
 }: {

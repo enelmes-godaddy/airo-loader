@@ -1,224 +1,69 @@
-.airo-loading-animation {
-  /* background: whitesmoke; */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
 }
 
-.content {
-  --content-size: 400px;
-  position: relative;
+.airo-loader-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: var(--content-size);
-  width: var(--content-size);
+  height: 100%;
+  width: 100%;
 }
 
-.sparkles {
-  --sparkles-size: 200px;
-  position: relative;
-  /* border: 1px lightslategray solid; */
-  height: var(--sparkles-size);
-  width: var(--sparkles-size);
-  /* background: url('./assets/ref-wand.svg') no-repeat center center; */
-  /* background: url('./assets/ref-sparkles.svg') no-repeat center center; */
+.airo-loader-container {
+  background: white;
+  border-radius: 16px;
+  height: fit-content;
+  padding: 40px;
 }
 
-.airo-loading-animation--playing {
+.airo-loader {
+  .sparkle,
+  .wand {
+    animation-play-state: paused;
+  }
+}
+
+.airo-loader--playing {
   .sparkle,
   .wand {
     animation-play-state: running;
   }
 }
 
-.sparkle1 {
-  animation: sparkle1 4.41s cubic-bezier(0.8, 0, 0, 1) infinite;
-  /* fill: lightblue; */
+.controls {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 }
 
-.sparkle2 {
-  animation: sparkle2 4.41s cubic-bezier(0.8, 0, 0, 1) infinite;
-  /* fill: tomato; */
+.size-control {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
 }
 
-.sparkle3 {
-  animation: sparkle3 4.41s cubic-bezier(0.8, 0, 0, 1) infinite;
-  /* fill: lightgreen; */
+button,
+input,
+label {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
 }
 
-.sparkle {
-  --size: 100px;
-  height: var(--size);
-  width: var(--size);
+button {
+  width: 100px;
 }
 
-.wand {
-  animation: 4.41s wand cubic-bezier(0.8, 0, 0, 1) infinite;
-  /* fill: palegoldenrod; */
+button,
+input {
+  padding: 12px;
 }
 
-.sparkle,
-.wand {
-  position: absolute;
-  animation-play-state: paused;
-}
-
-@keyframes sparkle1 {
-  0% {
-    top: 54%;
-    left: 1%;
-    transform: scale(0.55);
-  }
-  21.5% {
-    top: 31%;
-    left: 39%;
-    transform: scale(1.25);
-  }
-  24.9% {
-    top: 31%;
-    left: 39%;
-    transform: scale(1.25);
-  }
-  44.2% {
-    top: -13%;;
-    left: 17%;
-    transform: scale(0.35);
-  }
-  54.4% {
-    top: -13%;;
-    left: 17%;
-    transform: scale(0.35);
-  }
-  74.8% {
-    top: 54%;
-    left: 1%;
-    transform: scale(0.55);
-  }
-  100% {
-    top: 54%;
-    left: 1%;
-    transform: scale(0.55);
-  }
-}
-
-@keyframes sparkle2 {
-  0% {
-    top: 2%;
-    left: 0;
-    transform: scale(0.82)
-  }
-  20.4% {
-    top: 54%;
-    left: 1%;
-    transform: scale(0.55);
-  }
-  24.9% {
-    top: 54%;
-    left: 1%;
-    transform: scale(0.55);
-  }
-  43% {
-    top: 40%;
-    left: 61%;
-    transform: scale(0.36);
-  }
-  49.8% {
-    top: 40%;
-    left: 61%;
-    transform: scale(0.36);
-  }
-  62.3% {
-    top: 2%;
-    left: 61%;
-    transform: scale(0.82)
-  }
-  70.3% {
-    top: 2%;
-    left: 0;
-    transform: scale(0.82)
-  }
-  100% {
-    top: 2%;
-    left: 0;
-    transform: scale(0.82)
-  }
-}
-
-@keyframes sparkle3 {
-  0% {
-    top: 31%;
-    left: 39%;
-    transform: scale(1.25);
-  }
-  20.4% {
-    top: 3%;
-    left: 1%;
-    transform: scale(0.82)
-  }
-  27.2% {
-    top: 3%;
-    left: 1%;
-    transform: scale(0.82)
-  }
-  40.8% {
-    top: 5%;
-    left: -1%;
-    transform: scale(0.51);
-  }
-  52.1% {
-    top: 5%;
-    left: -1%;
-    transform: scale(0.51);
-  }
-  65.7% {
-    top: 31%;
-    left: 39%;
-    transform: scale(0.51)
-  }
-  72.5% {
-    top: 31%;
-    left: 39%;
-    transform: scale(1.25);
-  }
-  100% {
-    top: 31%;
-    left: 39%;
-    transform: scale(1.25);
-  }
-}
-
-@keyframes wand {
-  0% {
-    top: 70%;
-    left: -10%;
-    transform: scale(0);
-  }
-  24.9% {
-    top: 70%;
-    left: -10%;
-    transform: scale(0);
-  }
-  44.2% {
-    top: 33.5%;
-    left: 27.5%;
-    transform: scale(1);
-  }
-  47.6% {
-    top: 33.5%;
-    left: 27.5%;
-    transform: scale(1);
-    opacity: 1;
-  }
-  55.5% {
-    top: 10%;
-    left: 51%;
-    transform: scale(0.2);
-    opacity: 1;
-  }
-  55.6% {
-    opacity: 0;
-  }
-  100% {
-    top: 10%;
-    left: 51%;
-    opacity: 0;
-  }
+input {
+  width: 60px;
 }

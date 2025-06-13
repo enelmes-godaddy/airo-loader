@@ -1,37 +1,38 @@
-import React, { useState } from "react";
-import clsx from "clsx";
+import { useState } from "react";
+import AiroLoader from "./AiroLoader/AiroLoader";
+
 import "./App.css";
 
-import Sparkle from "./assets/sparkle.tsx";
-import Wand from "./assets/wand.tsx";
-
-const Sparkle1 = Sparkle;
-const Sparkle2 = Sparkle;
-const Sparkle3 = Sparkle;
-
 function App() {
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
+  const [size, setSize] = useState(200);
 
   return (
-    <>
-      <div
-        className={clsx("airo-loading-animation", {
-          "airo-loading-animation--playing": isPlaying,
-        })}
-      >
-        <div className="content">
-          <div className="sparkles">
-            <Sparkle1 className="sparkle sparkle1" />
-            <Sparkle2 className="sparkle sparkle2" />
-            <Sparkle3 className="sparkle sparkle3" />
-          </div>
-          <Wand className="wand" />
+    <div className="app">
+      <div className="controls">
+        <div className="size-control">
+          <label htmlFor="loader-size">Size:</label>
+          <input
+            id="loader-size"
+            type="number"
+            value={size}
+            min="80"
+            onChange={(e) => setSize(Number(e.target.value))}
+          />
         </div>
+        <button onClick={() => setIsPlaying(!isPlaying)}>
+          {isPlaying ? "Stop" : "Play"}
+        </button>
       </div>
-      <button onClick={() => setIsPlaying(!isPlaying)}>
-        {isPlaying ? "Stop" : "Play"}
-      </button>
-    </>
+      <div className="airo-loader-wrapper">
+      <div className="airo-loader-container">
+        <AiroLoader
+          className={isPlaying ? "airo-loader--playing" : ""}
+          size={size}
+          />
+      </div>
+      </div>
+    </div>
   );
 }
 
