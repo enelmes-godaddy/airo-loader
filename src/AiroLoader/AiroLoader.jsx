@@ -8,30 +8,43 @@ const Sparkle1 = Sparkle;
 const Sparkle2 = Sparkle;
 const Sparkle3 = Sparkle;
 
-function AiroLoader({ className }) {
+function AiroLoader({ className, size = 400 }) {
+  const sparkleSize = size * 0.25;
+  const wandSize = size * 0.4;
+
   return (
-    <>
-      <div className={clsx("airo-loader", className)}>
-        <div className="sparkles">
-          <Sparkle1
-            className="sparkle sparkle1"
-            // fill="lightblue"
-            size={100}
-          />
-          <Sparkle2
-            className="sparkle sparkle2"
-            // fill="tomato"
-            size={100}
-          />
-          <Sparkle3
-            className="sparkle sparkle3"
-            // fill="lightgreen"
-            size={100}
-          />
-        </div>
-        <Wand className="wand" />
+    <div
+      className={clsx("airo-loader", className)}
+      style={{
+        height: size,
+        width: size,
+      }}
+    >
+      <div
+        className="sparkles"
+        style={{
+          height: size * 0.5,
+          width: size * 0.5,
+        }}
+      >
+        <Sparkle1
+          className="sparkle sparkle1"
+          // fill="lightblue"
+          size={sparkleSize}
+        />
+        <Sparkle2
+          className="sparkle sparkle2"
+          // fill="tomato"
+          size={sparkleSize}
+        />
+        <Sparkle3
+          className="sparkle sparkle3"
+          // fill="lightgreen"
+          size={sparkleSize}
+        />
       </div>
-    </>
+      <Wand className="wand" size={wandSize} />
+    </div>
   );
 }
 
