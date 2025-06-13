@@ -30,17 +30,17 @@
 }
 
 .sparkle1 {
-  animation: sparkle1 4.41s ease-out infinite;
+  animation: sparkle1 4.41s ease-in-out infinite;
   /* fill: lightblue; */
 }
 
 .sparkle2 {
-  animation: sparkle2 4.41s ease-out infinite;
+  animation: sparkle2 4.41s ease-in-out infinite;
   /* fill: tomato; */
 }
 
 .sparkle3 {
-  animation: sparkle3 4.41s ease-out infinite;
+  animation: sparkle3 4.41s ease-in-out infinite;
   /* fill: lightgreen; */
 }
 
@@ -51,7 +51,7 @@
 }
 
 .wand {
-  animation: 4.41s wand ease-out infinite;
+  animation: 4.41s wand ease-in-out infinite;
   /* fill: palegoldenrod; */
 }
 
