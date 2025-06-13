@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import clsx from "clsx";
-import "./App.css";
+import "./AiroLoader.css";
 
 import Sparkle from "./assets/sparkle.tsx";
 import Wand from "./assets/wand.tsx";
@@ -9,7 +9,7 @@ const Sparkle1 = Sparkle;
 const Sparkle2 = Sparkle;
 const Sparkle3 = Sparkle;
 
-function App() {
+function AiroLoader() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
@@ -47,4 +47,4 @@ function App() {
   );
 }
 
-export default App;
+export default AiroLoader;
