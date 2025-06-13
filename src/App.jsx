@@ -25,12 +25,12 @@ function App() {
         </button>
       </div>
       <div className="airo-loader-wrapper">
-      <div className="airo-loader-container">
-        <AiroLoader
-          className={isPlaying ? "airo-loader--playing" : ""}
-          size={size}
+        <div className="airo-loader-container">
+          <AiroLoader
+            className={isPlaying ? "airo-loader--playing" : ""}
+            size={size}
           />
-      </div>
+        </div>
       </div>
     </div>
   );
