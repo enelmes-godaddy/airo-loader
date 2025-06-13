@@ -1,19 +1,22 @@
+:root {
+  --airo-loader-size: 400px;
+  --sparkles-size: calc(var(--airo-loader-size) * 0.5);
+}
+
 .airo-loader {
   /* background: whitesmoke; */
 }
 
 .content {
-  --content-size: 400px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: var(--content-size);
-  width: var(--content-size);
+  height: var(--airo-loader-size);
+  width: var(--airo-loader-size);
 }
 
 .sparkles {
-  --sparkles-size: 200px;
   position: relative;
   /* border: 1px lightslategray solid; */
   height: var(--sparkles-size);
