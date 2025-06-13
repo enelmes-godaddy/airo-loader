@@ -1,4 +1,4 @@
-.airo-loading-animation {
+.airo-loader {
   /* background: whitesmoke; */
 }
 
@@ -22,7 +22,7 @@
   /* background: url('./assets/ref-sparkles.svg') no-repeat center center; */
 }
 
-.airo-loading-animation--playing {
+.airo-loader--playing {
   .sparkle,
   .wand {
     animation-play-state: running;

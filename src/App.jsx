@@ -15,8 +15,8 @@ function App() {
   return (
     <>
       <div
-        className={clsx("airo-loading-animation", {
-          "airo-loading-animation--playing": isPlaying,
+        className={clsx("airo-loader", {
+          "airo-loader--playing": isPlaying,
         })}
       >
         <div className="content">
