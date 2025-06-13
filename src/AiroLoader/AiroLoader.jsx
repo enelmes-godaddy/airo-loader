@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import clsx from "clsx";
 import "./AiroLoader.css";
 
@@ -9,16 +8,10 @@ const Sparkle1 = Sparkle;
 const Sparkle2 = Sparkle;
 const Sparkle3 = Sparkle;
 
-function AiroLoader() {
-  const [isPlaying, setIsPlaying] = useState(false);
-
+function AiroLoader({ className }) {
   return (
     <>
-      <div
-        className={clsx("airo-loader", {
-          "airo-loader--playing": isPlaying,
-        })}
-      >
+      <div className={clsx("airo-loader", className)}>
         <div className="sparkles">
           <Sparkle1
             className="sparkle sparkle1"
@@ -38,9 +31,6 @@ function AiroLoader() {
         </div>
         <Wand className="wand" />
       </div>
-      <button onClick={() => setIsPlaying(!isPlaying)}>
-        {isPlaying ? "Stop" : "Play"}
-      </button>
     </>
   );
 }

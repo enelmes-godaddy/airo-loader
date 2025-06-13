@@ -20,13 +20,6 @@
   /* background: url('./assets/ref-sparkles.svg') no-repeat center center; */
 }
 
-.airo-loader--playing {
-  .sparkle,
-  .wand {
-    animation-play-state: running;
-  }
-}
-
 .sparkle1 {
   animation: sparkle1 4.41s cubic-bezier(0.8, 0, 0, 1) infinite;
 }
@@ -46,7 +39,6 @@
 .sparkle,
 .wand {
   position: absolute;
-  animation-play-state: paused;
 }
 
 @keyframes sparkle1 {

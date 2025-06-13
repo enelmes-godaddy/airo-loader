@@ -1,0 +1,18 @@
+button {
+  padding: 16px;
+  width: 100%
+}
+
+.airo-loader {
+  .sparkle,
+  .wand {
+    animation-play-state: paused;
+  }
+}
+
+.airo-loader--playing {
+  .sparkle,
+  .wand {
+    animation-play-state: running;
+  }
+}
