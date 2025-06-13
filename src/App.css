@@ -34,22 +34,18 @@
 
 .sparkle1 {
   animation: sparkle1 4.41s cubic-bezier(0.8, 0, 0, 1) infinite;
-  /* fill: lightblue; */
 }
 
 .sparkle2 {
   animation: sparkle2 4.41s cubic-bezier(0.8, 0, 0, 1) infinite;
-  /* fill: tomato; */
 }
 
 .sparkle3 {
   animation: sparkle3 4.41s cubic-bezier(0.8, 0, 0, 1) infinite;
-  /* fill: lightgreen; */
 }
 
 .wand {
   animation: 4.41s wand cubic-bezier(0.8, 0, 0, 1) infinite;
-  /* fill: palegoldenrod; */
 }
 
 .sparkle,

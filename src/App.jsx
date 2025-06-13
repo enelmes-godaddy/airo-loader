@@ -21,9 +21,21 @@ function App() {
       >
         <div className="content">
           <div className="sparkles">
-            <Sparkle1 className="sparkle sparkle1" size={100} />
-            <Sparkle2 className="sparkle sparkle2" size={100} />
-            <Sparkle3 className="sparkle sparkle3" size={100} />
+            <Sparkle1
+              className="sparkle sparkle1"
+              // fill="lightblue"
+              size={100}
+            />
+            <Sparkle2
+              className="sparkle sparkle2"
+              // fill="tomato"
+              size={100}
+            />
+            <Sparkle3
+              className="sparkle sparkle3"
+              // fill="lightgreen"
+              size={100}
+            />
           </div>
           <Wand className="wand" />
         </div>
