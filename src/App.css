@@ -1,6 +1,24 @@
-button {
-  padding: 16px;
-  width: 100%
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+}
+
+.airo-loader-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.airo-loader-container {
+  background: white;
+  border-radius: 16px;
+  height: fit-content;
+  padding: 40px;
 }
 
 .airo-loader {
@@ -15,4 +33,37 @@ button {
   .wand {
     animation-play-state: running;
   }
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.size-control {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+button,
+input,
+label {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+}
+
+button {
+  width: 100px;
+}
+
+button,
+input {
+  padding: 12px;
+}
+
+input {
+  width: 60px;
 }
