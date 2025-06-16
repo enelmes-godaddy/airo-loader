@@ -5,7 +5,7 @@ import "./App.css";
 
 function App() {
   const [isPlaying, setIsPlaying] = useState(true);
-  const [size, setSize] = useState(200);
+  const [size, setSize] = useState(96);
 
   return (
     <div className="app">
