@@ -8,7 +8,7 @@ const Sparkle1 = Sparkle;
 const Sparkle2 = Sparkle;
 const Sparkle3 = Sparkle;
 
-function AiroLoader({ className, size = 200 }) {
+function AiroLoader({ className, size = 192 }) {
   const sparkleSize = size * 0.25;
   const wandSize = size * 0.4;
 
