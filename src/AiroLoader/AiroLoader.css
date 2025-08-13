@@ -1,3 +1,9 @@
+:root {
+  --animation-duration: 3.75s;
+  --animation-timing-function: cubic-bezier(0.8, 0, 0, 1);
+  --animation-iteration-count: infinite;
+}
+
 .airo-loader {
   position: relative;
   display: flex;
@@ -14,19 +20,19 @@
 }
 
 .sparkle1 {
-  animation: sparkle1 3.75s cubic-bezier(0.8, 0, 0, 1) infinite;
+  animation: sparkle1 var(--animation-duration) var(--animation-timing-function) var(--animation-iteration-count);
 }
 
 .sparkle2 {
-  animation: sparkle2 3.75s cubic-bezier(0.8, 0, 0, 1) infinite;
+  animation: sparkle2 var(--animation-duration) var(--animation-timing-function) var(--animation-iteration-count);
 }
 
 .sparkle3 {
-  animation: sparkle3 3.75s cubic-bezier(0.8, 0, 0, 1) infinite;
+  animation: sparkle3 var(--animation-duration) var(--animation-timing-function) var(--animation-iteration-count);
 }
 
 .wand {
-  animation: wand 3.75s cubic-bezier(0.8, 0, 0, 1) infinite;
+  animation: wand var(--animation-duration) var(--animation-timing-function) var(--animation-iteration-count);
 }
 
 .sparkle,
