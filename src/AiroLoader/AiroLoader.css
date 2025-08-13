@@ -3,6 +3,40 @@
   --animation-timing-function: cubic-bezier(0.8, 0, 0, 1);
   --animation-iteration-count: infinite;
 
+  /* Sparkle positions and scales at start and end of animation */
+
+  /* Sparkle - left */
+  --sparkle-pos-left-top: 15%;
+  --sparkle-pos-left-left: 10%;
+  --sparkle-pos-left-scale: 1.38;
+
+  /* Sparkle - right - top */
+  --sparkle-pos-right-top-top: -10%;
+  --sparkle-pos-right-top-left: 52%;
+  --sparkle-pos-right-top-scale: 0.6;
+
+  /* Sparkle - right - bottom */
+  --sparkle-pos-right-bottom-top: 47%;
+  --sparkle-pos-right-bottom-left: 52.5%;
+  --sparkle-pos-right-bottom-scale: 0.9;
+
+  /* Sparkle positions and scales with wand */
+
+  /* Sparkle - left of wand - top */
+  --sparkle-wand-pos-left-top-top: -15%;
+  --sparkle-wand-pos-left-top-left: 13.5%;
+  --sparkle-wand-pos-left-top-scale: 0.38;
+
+  /* Sparkle - left of wand - bottom */
+  --sparkle-wand-pos-left-bottom-top: 3%;
+  --sparkle-wand-pos-left-bottom-left: -5%;
+  --sparkle-wand-pos-left-bottom-scale: 0.56;
+
+  /* Sparkle - right of wand */
+  --sparkle-wand-pos-right-top: 41%;
+  --sparkle-wand-pos-right-left: 60.5%;
+  --sparkle-wand-pos-right-scale: 0.38;
+
   /* Wand positions */
   --wand-pos-start-top: 70%;
   --wand-pos-start-left: -10%;
@@ -53,125 +87,125 @@
 
 @keyframes sparkle1 {
   0% {
-    top: -10%;
-    left: 52%;
-    transform: scale(0.6);
+    top: var(--sparkle-pos-right-top-top);
+    left: var(--sparkle-pos-right-top-left);
+    transform: scale(var(--sparkle-pos-right-top-scale));
   }
   2.6% {
-    top: -10%;
-    left: 52%;
-    transform: scale(0.6);
+    top: var(--sparkle-pos-right-top-top);
+    left: var(--sparkle-pos-right-top-left);
+    transform: scale(var(--sparkle-pos-right-top-scale));
   }
   29.3% {
-    top: 15%;
-    left: 10%;
-    transform: scale(1.38);
+    top: var(--sparkle-pos-left-top);
+    left: var(--sparkle-pos-left-left);
+    transform: scale(var(--sparkle-pos-left-scale));
   }
   50.6% {
-    top: 41%;
-    left: 60.5%;
-    transform: scale(0.38);
+    top: var(--sparkle-wand-pos-right-top);
+    left: var(--sparkle-wand-pos-right-left);
+    transform: scale(var(--sparkle-wand-pos-right-scale));
   }
   64% {
-    top: 41%;
-    left: 60.5%;
-    transform: scale(0.38);
+    top: var(--sparkle-wand-pos-right-top);
+    left: var(--sparkle-wand-pos-right-left);
+    transform: scale(var(--sparkle-wand-pos-right-scale));
   }
   85.3% {
-    top: -10%;
-    left: 52%;
-    transform: scale(0.6);
+    top: var(--sparkle-pos-right-top-top);
+    left: var(--sparkle-pos-right-top-left);
+    transform: scale(var(--sparkle-pos-right-top-scale));
   }
   100% {
-    top: -10%;
-    left: 52%;
-    transform: scale(0.6);
+    top: var(--sparkle-pos-right-top-top);
+    left: var(--sparkle-pos-right-top-left);
+    transform: scale(var(--sparkle-pos-right-top-scale));
   }
 }
 
 @keyframes sparkle2 {
   0% {
-    top: 47%;
-    left: 52.5%;
-    transform: scale(0.9);
+    top: var(--sparkle-pos-right-bottom-top);
+    left: var(--sparkle-pos-right-bottom-left);
+    transform: scale(var(--sparkle-pos-right-bottom-scale));
   }
   2.6% {
-    top: 47%;
-    left: 52.5%;
-    transform: scale(0.9);
+    top: var(--sparkle-pos-right-bottom-top);
+    left: var(--sparkle-pos-right-bottom-left);
+    transform: scale(var(--sparkle-pos-right-bottom-scale));
   }
   24% {
-    top: -10%;
-    left: 52%;
-    transform: scale(0.6);
+    top: var(--sparkle-pos-right-top-top);
+    left: var(--sparkle-pos-right-top-left);
+    transform: scale(var(--sparkle-pos-right-top-scale));
   }
   29.3% {
-    top: -10%;
-    left: 52%;
-    transform: scale(0.6);
+    top: var(--sparkle-pos-right-top-top);
+    left: var(--sparkle-pos-right-top-left);
+    transform: scale(var(--sparkle-pos-right-top-scale));
   }
   50.6% {
-    top: 3%;
-    left: -5%;
-    transform: scale(0.56);
+    top: var(--sparkle-wand-pos-left-bottom-top);
+    left: var(--sparkle-wand-pos-left-bottom-left);
+    transform: scale(var(--sparkle-wand-pos-left-bottom-scale));
   }
   58.6% {
-    top: 3%;
-    left: -5%;
-    transform: scale(0.56);
+    top: var(--sparkle-wand-pos-left-bottom-top);
+    left: var(--sparkle-wand-pos-left-bottom-left);
+    transform: scale(var(--sparkle-wand-pos-left-bottom-scale));
   }
   82.6% {
-    top: 47%;
-    left: 52.5%;
-    transform: scale(0.9);
+    top: var(--sparkle-pos-right-bottom-top);
+    left: var(--sparkle-pos-right-bottom-left);
+    transform: scale(var(--sparkle-pos-right-bottom-scale));
   }
   100% {
-    top: 47%;
-    left: 52.5%;
-    transform: scale(0.9);
+    top: var(--sparkle-pos-right-bottom-top);
+    left: var(--sparkle-pos-right-bottom-left);
+    transform: scale(var(--sparkle-pos-right-bottom-scale));
   }
 }
 
 @keyframes sparkle3 {
   0% {
-    top: 15%;
-    left: 10%;
-    transform: scale(1.38);
+    top: var(--sparkle-pos-left-top);
+    left: var(--sparkle-pos-left-left);
+    transform: scale(var(--sparkle-pos-left-scale));
   }
   2.6% {
-    top: 15%;
-    left: 10%;
-    transform: scale(1.38);
+    top: var(--sparkle-pos-left-top);
+    left: var(--sparkle-pos-left-left);
+    transform: scale(var(--sparkle-pos-left-scale));
   }
   24% {
-    top: 47%;
-    left: 52.5%;
-    transform: scale(0.9);
+    top: var(--sparkle-pos-right-bottom-top);
+    left: var(--sparkle-pos-right-bottom-left);
+    transform: scale(var(--sparkle-pos-right-bottom-scale));
   }
   34.6% {
-    top: 47%;
-    left: 52.5%;
-    transform: scale(0.9);
+    top: var(--sparkle-pos-right-bottom-top);
+    left: var(--sparkle-pos-right-bottom-left);
+    transform: scale(var(--sparkle-pos-right-bottom-scale));
   }
   48% {
-    top: -15%;
-    left: 13.5%;
-    transform: scale(0.38);
+    top: var(--sparkle-wand-pos-left-top-top);
+    left: var(--sparkle-wand-pos-left-top-left);
+    transform: scale(var(--sparkle-wand-pos-left-top-scale));
   }
   61.3% {
-    top: -15%;
-    left: 13.5%;
-    transform: scale(0.38);
+    top: var(--sparkle-wand-pos-left-top-top);
+    left: var(--sparkle-wand-pos-left-top-left);
+    transform: scale(var(--sparkle-wand-pos-left-top-scale));
   }
   84% {
-    top: 15%;
-    left: 10%;
-    transform: scale(1.38);
+    top: var(--sparkle-pos-left-top);
+    left: var(--sparkle-pos-left-left);
+    transform: scale(var(--sparkle-pos-left-scale));
   }
   100% {
-    top: 15%;
-    left: 10%;
-    transform: scale(1.38);
+    top: var(--sparkle-pos-left-top);
+    left: var(--sparkle-pos-left-left);
+    transform: scale(var(--sparkle-pos-left-scale));
   }
 }
 
