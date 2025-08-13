@@ -7,6 +7,9 @@
 
 .sparkles {
   position: relative;
+  background-image: url('./assets/ref-sparkles.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .sparkle1 {
