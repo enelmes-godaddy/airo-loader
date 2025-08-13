@@ -64,6 +64,8 @@
 
 .sparkles {
   position: relative;
+
+  /* Test styles to check sparkle and wand positioning and scale */
   /* background-image: url('./assets/ref-sparkles.svg'); */
   /* background-image: url('./assets/ref-wand.svg'); */
   /* background-size: contain; */
