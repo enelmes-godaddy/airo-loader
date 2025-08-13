@@ -182,9 +182,9 @@
     transform: scale(var(--wand-pos-start-scale));
   }
   29.3% {
-    top: var(--wand-pos-mid-top);
-    left: var(--wand-pos-mid-left);
-    transform: scale(var(--wand-pos-mid-scale));
+    top: var(--wand-pos-start-top);
+    left: var(--wand-pos-start-left);
+    transform: scale(var(--wand-pos-start-scale));
   }
   52% {
     top: var(--wand-pos-mid-top);
