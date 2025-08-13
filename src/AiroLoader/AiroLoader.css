@@ -8,9 +8,9 @@
 .sparkles {
   position: relative;
   /* background-image: url('./assets/ref-sparkles.svg'); */
-  background-image: url('./assets/ref-wand.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
+  /* background-image: url('./assets/ref-wand.svg'); */
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
 }
 
 .sparkle1 {
