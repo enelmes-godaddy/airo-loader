@@ -95,39 +95,44 @@
 
 @keyframes sparkle1 {
   0% {
-    top: var(--sparkle-pos-right-top-top);
-    left: var(--sparkle-pos-right-top-left);
-    transform: scale(var(--sparkle-pos-right-top-scale));
-  }
-  2.6% {
-    top: var(--sparkle-pos-right-top-top);
-    left: var(--sparkle-pos-right-top-left);
-    transform: scale(var(--sparkle-pos-right-top-scale));
-  }
-  29.3% {
     top: var(--sparkle-pos-left-top);
     left: var(--sparkle-pos-left-left);
     transform: scale(var(--sparkle-pos-left-scale));
   }
-  50.6% {
-    top: var(--sparkle-wand-pos-right-top);
-    left: var(--sparkle-wand-pos-right-left);
-    transform: scale(var(--sparkle-wand-pos-right-scale));
+  2.6% {
+    top: var(--sparkle-pos-left-top);
+    left: var(--sparkle-pos-left-left);
+    transform: scale(var(--sparkle-pos-left-scale));
   }
-  64% {
-    top: var(--sparkle-wand-pos-right-top);
-    left: var(--sparkle-wand-pos-right-left);
-    transform: scale(var(--sparkle-wand-pos-right-scale));
+  24% {
+    top: var(--sparkle-pos-right-bottom-top);
+    left: var(--sparkle-pos-right-bottom-left);
+    transform: scale(var(--sparkle-pos-right-bottom-scale));
   }
-  85.3% {
-    top: var(--sparkle-pos-right-top-top);
-    left: var(--sparkle-pos-right-top-left);
-    transform: scale(var(--sparkle-pos-right-top-scale));
+  34.6% {
+    top: var(--sparkle-pos-right-bottom-top);
+    left: var(--sparkle-pos-right-bottom-left);
+    transform: scale(var(--sparkle-pos-right-bottom-scale));
+  }
+  48% {
+    top: var(--sparkle-wand-pos-left-top-top);
+    left: var(--sparkle-wand-pos-left-top-left);
+    transform: scale(var(--sparkle-wand-pos-left-top-scale));
+  }
+  61.3% {
+    top: var(--sparkle-wand-pos-left-top-top);
+    left: var(--sparkle-wand-pos-left-top-left);
+    transform: scale(var(--sparkle-wand-pos-left-top-scale));
+  }
+  84% {
+    top: var(--sparkle-pos-left-top);
+    left: var(--sparkle-pos-left-left);
+    transform: scale(var(--sparkle-pos-left-scale));
   }
   100% {
-    top: var(--sparkle-pos-right-top-top);
-    left: var(--sparkle-pos-right-top-left);
-    transform: scale(var(--sparkle-pos-right-top-scale));
+    top: var(--sparkle-pos-left-top);
+    left: var(--sparkle-pos-left-left);
+    transform: scale(var(--sparkle-pos-left-scale));
   }
 }
 
@@ -176,44 +181,39 @@
 
 @keyframes sparkle3 {
   0% {
-    top: var(--sparkle-pos-left-top);
-    left: var(--sparkle-pos-left-left);
-    transform: scale(var(--sparkle-pos-left-scale));
+    top: var(--sparkle-pos-right-top-top);
+    left: var(--sparkle-pos-right-top-left);
+    transform: scale(var(--sparkle-pos-right-top-scale));
   }
   2.6% {
+    top: var(--sparkle-pos-right-top-top);
+    left: var(--sparkle-pos-right-top-left);
+    transform: scale(var(--sparkle-pos-right-top-scale));
+  }
+  29.3% {
     top: var(--sparkle-pos-left-top);
     left: var(--sparkle-pos-left-left);
     transform: scale(var(--sparkle-pos-left-scale));
   }
-  24% {
-    top: var(--sparkle-pos-right-bottom-top);
-    left: var(--sparkle-pos-right-bottom-left);
-    transform: scale(var(--sparkle-pos-right-bottom-scale));
+  50.6% {
+    top: var(--sparkle-wand-pos-right-top);
+    left: var(--sparkle-wand-pos-right-left);
+    transform: scale(var(--sparkle-wand-pos-right-scale));
   }
-  34.6% {
-    top: var(--sparkle-pos-right-bottom-top);
-    left: var(--sparkle-pos-right-bottom-left);
-    transform: scale(var(--sparkle-pos-right-bottom-scale));
+  64% {
+    top: var(--sparkle-wand-pos-right-top);
+    left: var(--sparkle-wand-pos-right-left);
+    transform: scale(var(--sparkle-wand-pos-right-scale));
   }
-  48% {
-    top: var(--sparkle-wand-pos-left-top-top);
-    left: var(--sparkle-wand-pos-left-top-left);
-    transform: scale(var(--sparkle-wand-pos-left-top-scale));
-  }
-  61.3% {
-    top: var(--sparkle-wand-pos-left-top-top);
-    left: var(--sparkle-wand-pos-left-top-left);
-    transform: scale(var(--sparkle-wand-pos-left-top-scale));
-  }
-  84% {
-    top: var(--sparkle-pos-left-top);
-    left: var(--sparkle-pos-left-left);
-    transform: scale(var(--sparkle-pos-left-scale));
+  85.3% {
+    top: var(--sparkle-pos-right-top-top);
+    left: var(--sparkle-pos-right-top-left);
+    transform: scale(var(--sparkle-pos-right-top-scale));
   }
   100% {
-    top: var(--sparkle-pos-left-top);
-    left: var(--sparkle-pos-left-left);
-    transform: scale(var(--sparkle-pos-left-scale));
+    top: var(--sparkle-pos-right-top-top);
+    left: var(--sparkle-pos-right-top-left);
+    transform: scale(var(--sparkle-pos-right-top-scale));
   }
 }
 
