@@ -233,18 +233,18 @@
     left: var(--wand-pos-start-left);
     transform: scale(var(--wand-pos-start-scale));
   }
-  52% {
+  53.3% {
     top: var(--wand-pos-mid-top);
     left: var(--wand-pos-mid-left);
     transform: scale(var(--wand-pos-mid-scale));
   }
-  55.4% {
+  56% {
     top: var(--wand-pos-mid-top);
     left: var(--wand-pos-mid-left);
     transform: scale(var(--wand-pos-mid-scale));
     opacity: 1;
   }
-  78.6% {
+  80% {
     top: var(--wand-pos-end-top);
     left: var(--wand-pos-end-left);
     transform: scale(var(--wand-pos-end-scale));
